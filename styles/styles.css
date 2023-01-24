@@ -1,0 +1,292 @@
+/* Common style */
+* {
+  margin: 0;
+}
+
+/* Header Part */
+.header h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #3a3a3a;
+  font-size: 24px;
+}
+.header nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-text a {
+  text-decoration: none;
+  color: #3a3a3a;
+  padding-right: 30px;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+.fa-magnifying-glass {
+  padding-right: 30px;
+}
+
+/* header part text & image  */
+.header-camara-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.camara-text {
+  width: 582px;
+  height: 270px;
+}
+.camara-text h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #3a3a3a;
+  margin-bottom: 10px;
+}
+.camara-text p {
+  color: #3a3a3a;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.prebook-btn {
+  padding: 10px 24px;
+  background: #e02c6d;
+  border-radius: 41px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+.fa-arrow-right {
+  padding-left: 8px;
+}
+.camera-img {
+  background-image: url("../images/Circle\ design.svg");
+  width: 475px;
+  height: 475px;
+}
+.camera-img img {
+  padding: 15px 5px;
+}
+.just-responsive {
+  display: none;
+}
+
+/* logo-section */
+.logo-section {
+  width: 1110px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, white, #aaaaaa4d, rgb(255, 255, 255))
+    1;
+  margin: 90px auto;
+}
+.logo-section img {
+  padding-left: 60px;
+}
+
+/* Popular Collection */
+.collection-section {
+  width: 1047px;
+  height: 1680px;
+  margin: 0 auto;
+}
+.collection-section h3 {
+  padding-bottom: 20px;
+  color: #3a3a3a;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+}
+.collection-section article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card {
+  width: 300px;
+  height: 445px;
+  padding: 16px 12px;
+  border-radius: 5px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
+  text-align: left;
+}
+.margin {
+  margin-left: 30px;
+}
+.card img {
+  text-align: center;
+  width: 300px;
+  height: 256px;
+  padding-bottom: 16px;
+}
+.card h1 {
+  padding-bottom: 6px;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 28px;
+  color: #18191f;
+}
+.card h2 {
+  font-weight: 400;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.87);
+  padding-bottom: 6px;
+}
+.card p {
+  font-weight: 700;
+  font-size: 14px;
+  color: #787885;
+}
+.rating-price {
+  display: flex;
+  padding-bottom: 10px;
+}
+.rating-price p {
+  padding-left: 15px;
+}
+.fa-star,
+.fa-star-half-stroke {
+  color: orange;
+}
+.see-more {
+  text-align: right;
+  color: #e02c6d;
+  height: 24px;
+  font-weight: 900;
+  padding-top: 40px;
+}
+/* Featured products at one place */
+.featured-section {
+  width: 1110px;
+  height: 270px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.featured-section-img,
+.featured-section-text {
+  width: 50%;
+}
+.featured-section-text p {
+  padding: 16px 0;
+  font-weight: 700;
+  font-size: 16px;
+  color: #6c6c6c;
+}
+.featured-section-text h1 {
+  font-weight: 700;
+  font-size: 38px;
+  color: #0a0826;
+}
+/* footer */
+footer {
+  background-color: #000000;
+  height: 180px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding-top: 2.5em;
+}
+footer h1 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 24px;
+  padding-bottom: 3px;
+}
+footer p {
+  font-weight: 700;
+  font-size: 14px;
+  color: #d9dbe1;
+  padding-bottom: 30px;
+}
+footer img {
+  padding: 10px;
+}
+/* Responsive for mobile device */
+@media screen and (max-width: 576px) {
+  .header h1 {
+    text-align: center;
+    font-weight: 900;
+  }
+  .nav-text {
+    display: none;
+  }
+  .just-responsive {
+    display: block;
+  }
+  .header-camara-section {
+    flex-direction: column-reverse;
+  }
+  .camara-text {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+  }
+  .camara-text h1 {
+    font-size: 40px;
+    margin: 10px 10px;
+  }
+  .camera-img {
+    background-size: 82%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .camera-img img {
+    width: 80%;
+  }
+  .logo-section {
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+    margin: 0px 0 50px 0;
+  }
+  .collection-section article {
+    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .collection-section {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .res-margin {
+    margin-left: 30px;
+  }
+  .see-more {
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  .featured-section {
+    height: 540px;
+    width: 95%;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .featured-section-img,
+  .featured-section-text {
+    width: 90%;
+  }
+  .featured-section-img img {
+    width: 90%;
+  }
+  .featured-section-text {
+    padding-bottom: 1.5em;
+  }
+}
